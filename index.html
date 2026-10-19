@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Beğendik Burger · 1993'ten beri Uzun Sokak, Trabzon</title>
+<meta name="description" content="1993'ten beri Trabzon Uzun Sokak'ta. Beğendik Burger, AkçaBurger, tavuk şiş, Akçaabat köfte ve daha fazlası. Paket servis: 0462 321 07 88">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-800.webp" imagesrcset="img/hero-800.webp 800w, img/hero.webp 1600w" imagesizes="(max-width:800px) 100vw, 55vw">
+<style>
+:root { --pink:#ec008b; --pink-dark:#c20073; --blue:#0082d8; --blue-dark:#005fa0; --ink:#1d1d26; --muted:#62626e; --line:#ececf1; --soft:#fff3f9; --bg:#fff; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:70px; }
+body { margin:0; font-family:Inter,system-ui,sans-serif; color:var(--ink); background:var(--bg); line-height:1.55; }
+img { max-width:100%; display:block; }
+.wrap { max-width:1120px; margin:0 auto; padding:0 16px; }
+h1,h2,h3 { font-family:"Baloo 2",system-ui,sans-serif; line-height:1.05; margin:0; }
+.eyebrow { font-weight:600; font-size:.8rem; letter-spacing:.14em; text-transform:uppercase; color:var(--pink); }
+.demo { background:#222; color:#fff; text-align:center; font-size:.82rem; font-weight:600; padding:7px 16px; }
+
+nav { position:sticky; top:0; z-index:10; background:rgba(255,255,255,.95); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+nav .wrap { display:flex; align-items:center; justify-content:space-between; height:62px; gap:12px; }
+nav .logo img { height:30px; width:auto; }
+nav ul { display:flex; gap:22px; list-style:none; margin:0; padding:0; align-items:center; }
+nav a { color:var(--ink); text-decoration:none; font-weight:500; font-size:.95rem; }
+nav .call { background:var(--pink); color:#fff; padding:9px 14px; border-radius:999px; font-weight:600; white-space:nowrap; }
+@media (max-width:760px) { nav ul li:not(:last-child) { display:none; } }
+
+.hero { background:#fff; overflow:hidden; }
+.hero .wrap { display:grid; grid-template-columns:.95fr 1.05fr; align-items:center; gap:24px; padding-top:48px; padding-bottom:48px; }
+.hero h1 { font-size:clamp(2.6rem,7vw,4.4rem); font-weight:800; margin:10px 0 14px; }
+.hero h1 .b { color:var(--blue); } .hero h1 .p { color:var(--pink); }
+.hero p { font-size:1.12rem; color:var(--muted); max-width:30em; margin:0 0 24px; }
+.btns { display:flex; flex-wrap:wrap; gap:10px; }
+.btn { display:inline-block; padding:13px 22px; border-radius:999px; font-weight:600; text-decoration:none; }
+.btn.pink { background:var(--pink); color:#fff; box-shadow:0 8px 20px rgba(236,0,139,.25); }
+.btn.blue { background:#fff; color:var(--blue-dark); border:2px solid var(--blue); }
+.hero-img { position:relative; }
+.hero-img::before { content:""; position:absolute; inset:8% 4% 4% 10%; background:var(--pink); opacity:.08; border-radius:50%; }
+.hero-img img { position:relative; width:100%; height:auto; mix-blend-mode:multiply; }
+.badge { position:absolute; left:2%; bottom:8%; background:var(--blue); color:#fff; border-radius:16px; padding:10px 16px; font-family:"Baloo 2",sans-serif; font-weight:800; line-height:1; box-shadow:0 10px 24px rgba(0,130,216,.3); }
+.badge small { display:block; font-family:Inter,sans-serif; font-weight:500; font-size:.72rem; opacity:.9; margin-bottom:3px; }
+.badge span { font-size:1.6rem; }
+@media (max-width:800px) { .hero .wrap { grid-template-columns:1fr; padding-top:28px; } .hero-img { order:-1; margin:0 -8px; } }
+
+.strip { background:var(--blue); color:#fff; }
+.strip .wrap { display:flex; flex-wrap:wrap; justify-content:center; gap:10px 34px; padding-top:14px; padding-bottom:14px; font-weight:600; }
+
+section { padding:72px 0; }
+.head { text-align:center; max-width:620px; margin:0 auto 34px; }
+.head h2 { font-size:clamp(2rem,5vw,2.9rem); font-weight:800; margin-top:6px; }
+.head p { color:var(--muted); margin:10px 0 0; }
+
+.tabs { display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin-bottom:26px; }
+.tabs button { font:inherit; font-weight:600; border:2px solid var(--line); background:#fff; color:var(--ink); padding:9px 18px; border-radius:999px; cursor:pointer; }
+.tabs button[aria-selected="true"] { background:var(--pink); border-color:var(--pink); color:#fff; }
+.panel[hidden] { display:none; }
+.cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr)); gap:16px; }
+.card > div { min-width:0; }
+.card { border:1px solid var(--line); border-radius:18px; padding:14px; display:grid; grid-template-columns:96px 1fr; gap:14px; align-items:center; background:#fff; }
+.card img { width:96px; height:96px; object-fit:cover; border-radius:12px; }
+.card h3 { font-size:1.25rem; font-weight:800; display:flex; justify-content:space-between; gap:8px; }
+.card h3 .price { color:var(--pink); white-space:nowrap; }
+.card p { margin:4px 0 0; color:var(--muted); font-size:.9rem; }
+.list { max-width:640px; margin:0 auto; border:1px solid var(--line); border-radius:18px; padding:6px 20px; }
+.list div { display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px dashed var(--line); font-weight:500; }
+.list div:last-child { border-bottom:0; }
+.list span { color:var(--pink); font-weight:700; }
+.note { text-align:center; color:var(--muted); font-size:.9rem; margin-top:18px; }
+
+.about { background:var(--soft); }
+.about .wrap { display:grid; grid-template-columns:1fr 1fr; gap:44px; align-items:center; }
+.about h2 { font-size:clamp(2rem,5vw,2.8rem); font-weight:800; margin:6px 0 16px; }
+.about p { color:#3d3d48; margin:0 0 14px; }
+.about figure { margin:0; }
+.about img { border-radius:18px; box-shadow:0 18px 40px rgba(0,0,0,.12); }
+.about figcaption { font-size:.85rem; color:var(--muted); margin-top:8px; }
+.motto { font-family:"Baloo 2",sans-serif; font-weight:800; font-size:1.5rem; color:var(--blue); }
+@media (max-width:800px) { .about .wrap { grid-template-columns:1fr; } }
+
+.zones { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+.zone { border-radius:18px; padding:18px; background:#fff; border:1px solid var(--line); }
+.zone b { font-family:"Baloo 2",sans-serif; font-size:1.5rem; color:var(--pink); display:block; }
+.zone small { color:var(--muted); font-weight:600; font-size:.78rem; text-transform:uppercase; letter-spacing:.08em; }
+.zone p { margin:8px 0 0; font-size:.92rem; color:#3d3d48; }
+@media (max-width:900px) { .zones { grid-template-columns:1fr 1fr; } }
+@media (max-width:520px) { .zones { grid-template-columns:1fr; } }
+
+.store { padding:0; }
+.store img { width:100%; height:auto; max-height:420px; object-fit:cover; }
+
+.contact .wrap { display:grid; grid-template-columns:1fr 1.2fr; gap:32px; }
+.contact h2 { font-size:2.4rem; font-weight:800; margin:6px 0 10px; }
+.contact dl { margin:0; }
+.contact dt { font-size:.78rem; font-weight:600; text-transform:uppercase; letter-spacing:.12em; color:var(--pink); margin-top:18px; }
+.contact dd { margin:4px 0 0; font-size:1.08rem; }
+.contact a { color:var(--blue-dark); }
+.social { display:flex; gap:10px; margin-top:22px; }
+.social a { text-decoration:none; font-weight:600; padding:10px 16px; border-radius:999px; border:2px solid var(--line); color:var(--ink); }
+.map { width:100%; min-height:340px; height:100%; border:0; border-radius:18px; }
+@media (max-width:800px) { .contact .wrap { grid-template-columns:1fr; } }
+
+footer { background:var(--ink); color:#b4b4c0; padding:26px 0 90px; font-size:.88rem; }
+footer .wrap { display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px; }
+.float-call { position:fixed; right:16px; bottom:16px; z-index:20; display:flex; align-items:center; gap:8px; background:var(--pink); color:#fff; text-decoration:none; font-weight:700; padding:12px 18px 12px 12px; border-radius:999px; box-shadow:0 10px 26px rgba(236,0,139,.35); }
+.float-call img { width:34px; height:34px; border-radius:50%; background:#fff; }
+</style>
+</head>
+<body>
+<div class="demo">Tasarım önerisidir — Beğendik Burger'in resmi web sitesi değildir.</div>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#"><img src="img/logo.webp" width="302" height="44" alt="Beğendik Burger"></a>
+    <ul>
+      <li><a href="#menu">Menü</a></li>
+      <li><a href="#hakkimizda">Hakkımızda</a></li>
+      <li><a href="#paket">Paket Servis</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
+      <li><a class="call" href="tel:+904623210788">📞 321 07 88</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">1993'ten beri · Uzun Sokak, Trabzon</div>
+      <h1><span class="b">Beğendik</span> <span class="p">Burger</span></h1>
+      <p>Tüm siparişlerinizi üstün kalite anlayışımızla, temiz ve hijyenik bir ortamda hazırlayarak kısa sürede sizlere ulaştırıyoruz.</p>
+      <div class="btns">
+        <a class="btn pink" href="tel:+904623210788">Hemen Sipariş Ver</a>
+        <a class="btn blue" href="#menu">Menüyü Gör</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="img/hero-800.webp" srcset="img/hero-800.webp 800w, img/hero.webp 1600w" sizes="(max-width:800px) 100vw, 55vw" width="1600" height="1067" alt="Beğendik Burger" fetchpriority="high">
+      <div class="badge"><small>Beğendik Burger</small><span>280 TL</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <span>📍 Uzun Sok. No: 6</span>
+    <span>📞 0462 321 07 88</span>
+    <span>🛵 Paket servis</span>
+  </div>
+</div>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Menü</div>
+      <h2>Yemeklerimizi Keşfedin</h2>
+      <p>Soframızda eşsiz lezzetleri sizlerle paylaşmaktan keyif alıyoruz.</p>
+    </div>
+
+    <div class="tabs" role="tablist">
+      <button role="tab" aria-selected="true" aria-controls="t-burger">Burgerler</button>
+      <button role="tab" aria-selected="false" aria-controls="t-menu">Menüler</button>
+      <button role="tab" aria-selected="false" aria-controls="t-salata">Salata &amp; Cips</button>
+      <button role="tab" aria-selected="false" aria-controls="t-icecek">İçecekler</button>
+    </div>
+
+    <div class="panel" id="t-burger" role="tabpanel">
+      <div class="cards">
+        <div class="card"><img loading="lazy" src="img/m-begendik.webp" alt="Beğendik Burger" width="96" height="96"><div><h3>Beğendik Burger <span class="price">280 TL</span></h3><p>Şinitzel tavuk, Rus salatası, kaşar, cips, marul, domates, turşu</p></div></div>
+        <div class="card"><img loading="lazy" src="img/m-tavukburger.webp" alt="Tavuk Burger" width="96" height="96"><div><h3>Tavuk Burger <span class="price">250 TL</span></h3><p>Şinitzel tavuk, cips, marul, domates, turşu</p></div></div>
+        <div class="card"><img loading="lazy" src="img/m-hamburger.webp" alt="Hamburger" width="96" height="96"><div><h3>Hamburger <span class="price">250 TL</span></h3><p>Hamburger köfte, cips, marul, domates, turşu</p></div></div>
+        <div class="card"><img loading="lazy" src="img/m-chesee.webp" alt="Cheese Burger" width="96" height="96"><div><h3>Cheese Burger <span class="price">260 TL</span></h3><p>Hamburger köfte, kaşar, cips, marul, domates, turşu</p></div></div>
+        <div class="card"><img loading="lazy" src="img/m-akcaburger.webp" alt="AkçaBurger" width="96" height="96"><div><h3>AkçaBurger <span class="price">350 TL</span></h3><p>Akçaabat köfte, marul, domates, turşu, cips</p></div></div>
+        <div class="card"><img loading="lazy" src="img/m-sosisli.webp" alt="Sosisli Sandwich" width="96" height="96"><div><h3>Sosisli Sandwich <span class="price">260 TL</span></h3><p>Sosis, cips, domates, turşu</p></div></div>
+      </div>
+    </div>
+
+    <div class="panel" id="t-menu" role="tabpanel" hidden>
+      <div class="cards">
+        <div class="card"><img loading="lazy" src="img/m-schnitzel.webp" alt="Tavuk Şinitzel" width="96" height="96"><div><h3>Tavuk Şinitzel <span class="price">400 TL</span></h3><p>Şinitzel tavuk (200 gr), cips, karışık salata</p></div></div>
+        <div class="card"><img loading="lazy" src="img/m-ogrenci.webp" alt="Öğrenci Menü" width="96" height="96"><div><h3>Öğrenci Menü <span class="price">330 TL</span></h3><p>Şinitzel tavuk (100 gr), cips, karışık salata</p></div></div>
+        <div class="card"><img loading="lazy" src="img/m-bonfile.webp" alt="Tavuk Bonfile" width="96" height="96"><div><h3>Tavuk Bonfile <span class="price">400 TL</span></h3><p>Izgara tavuk (200 gr), cips, karışık salata</p></div></div>
+        <div class="card"><img loading="lazy" src="img/m-tsis.webp" alt="Tavuk Şiş" width="96" height="96"><div><h3>Tavuk Şiş <span class="price">400 TL</span></h3><p>Tavuk (200 gr), cips, karışık salata</p></div></div>
+        <div class="card"><img loading="lazy" src="img/m-akca-menu.webp" alt="Akçaabat Köfte" width="96" height="96"><div><h3>Akçaabat Köfte <span class="price">450 TL</span></h3><p>Akçaabat köfte (200 gr), cips, karışık salata</p></div></div>
+        <div class="card"><img loading="lazy" src="img/m-sosistava.webp" alt="Sosis Tava" width="96" height="96"><div><h3>Sosis Tava <span class="price">320 TL</span></h3><p>Sosis (150 gr), cips, karışık salata</p></div></div>
+      </div>
+    </div>
+
+    <div class="panel" id="t-salata" role="tabpanel" hidden>
+      <div class="list">
+        <div>Büyük Salata <span>300 TL</span></div>
+        <div>Küçük Salata <span>280 TL</span></div>
+        <div>Büyük Cips <span>300 TL</span></div>
+        <div>Küçük Cips <span>280 TL</span></div>
+      </div>
+    </div>
+
+    <div class="panel" id="t-icecek" role="tabpanel" hidden>
+      <div class="list">
+        <div>Kola <span>70 TL</span></div>
+        <div>Fanta <span>70 TL</span></div>
+        <div>Icetea <span>60 TL</span></div>
+        <div>Cappy <span>60 TL</span></div>
+        <div>Su <span>20 TL</span></div>
+        <div>Limonata <span>150 TL</span></div>
+        <div>Ayran <span>50 TL</span></div>
+        <div>Portakal Suyu <span>180 TL</span></div>
+        <div>Soda <span>50 TL</span></div>
+        <div>Büyük Çay <span>30 TL</span></div>
+        <div>Küçük Çay <span>15 TL</span></div>
+      </div>
+    </div>
+    <p class="note">Sipariş ve güncel fiyatlar için: <a href="tel:+904623210788">0462 321 07 88</a></p>
+  </div>
+</section>
+
+<section id="hakkimizda" class="about">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Hakkımızda</div>
+      <h2>4 masayla başlayan bir hikâye</h2>
+      <p>1993'te Trabzon'un en gözde sokaklarından Uzun Sokak'ta, 4 masa ve birkaç mutfak ekipmanıyla küçük bir mekânda attık ilk adımı. Müşterilerimizle kurduğumuz sıcak bağ sayesinde kısa sürede yükselen bir değer olduk.</p>
+      <p>2000 yılında, soğuk havalara rağmen dışarıda sıra bekleyen misafirlerimizi daha fazla bekletmemek için üst katı da mekânımıza kattık. 2006'da mekânımızı genişletip yeniden dekore ettik; imalat, iç servis ve dış servis bölümlerini ayırarak hem misafirlerimize hem çalışanlarımıza daha iyi bir ortam oluşturduk.</p>
+      <p class="motto">“En mutlu insan, üreten insandır.”</p>
+    </div>
+    <figure>
+      <img loading="lazy" src="img/1993-2020.webp" width="1200" height="531" alt="Beğendik Burger Uzun Sokak, 1993 ve 2020">
+      <figcaption>Uzun Sokak'taki dükkânımız: 1993 ve bugün.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="paket">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Paket Servis</div>
+      <h2>Kapınıza kadar getiriyoruz</h2>
+      <p>Bölgenize göre minimum sipariş tutarları:</p>
+    </div>
+    <div class="zones">
+      <div class="zone"><small>Minimum</small><b>130 TL</b><p>Atapark, Valilik, Moloz, Yenicuma, Çömlekçi, Değirmendere</p></div>
+      <div class="zone"><small>Minimum</small><b>180 TL</b><p>Beşirli, Karşıyaka, Aydınlıkevler, Yeşiltepe, Toklu, Kurankursu, Ayasofya, İnönü Mh., Erdoğdu, Kuruçeşme, Soğuksu, Boztepe, Çukurçayır, Kalkınma, Bostancı, Havaalanı, Pelitli, Deliklitaş, Bahçecik</p></div>
+      <div class="zone"><small>Minimum</small><b>250 TL</b><p>Yalıncak, Çimenli, Akoluk, Yıldızlı, Söğütlü</p></div>
+      <div class="zone"><small>Minimum</small><b>350 TL</b><p>Akçaabat, Yomra, Arsin</p></div>
+    </div>
+    <div class="btns" style="justify-content:center;margin-top:26px">
+      <a class="btn pink" href="tel:+904623210788">📞 0462 321 07 88 — Sipariş Ver</a>
+    </div>
+  </div>
+</section>
+
+<section class="store">
+  <img loading="lazy" src="img/dukkan.webp" width="1200" height="447" alt="Beğendik Burger Uzun Sokak dükkânı">
+</section>
+
+<section id="iletisim" class="contact">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">İletişim</div>
+      <h2>Bizi ziyaret edin</h2>
+      <dl>
+        <dt>Adres</dt><dd>Uzun Sok. No: 6, Ortahisar / Trabzon</dd>
+        <dt>Sipariş Hattı</dt><dd><a href="tel:+904623210788">0462 321 07 88</a></dd>
+        <dt>E-posta</dt><dd><a href="mailto:trabzon@begendikburger.com">trabzon@begendikburger.com</a></dd>
+      </dl>
+      <div class="social">
+        <a href="https://www.instagram.com/begendikburger" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/BegendikBurger" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <iframe class="map" loading="lazy" title="Beğendik Burger konum" src="https://maps.google.com/maps?q=Be%C4%9Fendik%20Burger%20Uzun%20Sokak%206%20Trabzon&output=embed"></iframe>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Beğendik Burger · Trabzon</span>
+    <span>1993'ten beri Uzun Sokak'ta.</span>
+  </div>
+</footer>
+
+<a class="float-call" href="tel:+904623210788"><img src="img/alo-servis.webp" width="34" height="34" alt="">Sipariş: 321 07 88</a>
+
+<script>
+document.querySelectorAll('[role=tab]').forEach(function (tab) {
+  tab.addEventListener('click', function () {
+    document.querySelectorAll('[role=tab]').forEach(function (t) {
+      t.setAttribute('aria-selected', t === tab);
+      document.getElementById(t.getAttribute('aria-controls')).hidden = t !== tab;
+    });
+  });
+});
+</script>
+</body>
+</html>
